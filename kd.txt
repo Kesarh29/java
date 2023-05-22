@@ -1,0 +1,34 @@
+package kesar;
+import java.util.*;
+public class ExceptionEx
+{
+
+	public static void main(String[] args)
+	{
+		Scanner in = new Scanner(System.in);
+		int a,b,div;
+		System.out.println("Enter the number1");
+		a=in.nextInt();
+		System.out.println("Enter the number2");
+		b=in.nextInt();
+		try
+		{
+		div=a/b;
+		System.out.println("Div="+div);
+		}
+		catch(ArithmeticException ae)
+		{
+			System.out.println(ae.getMessage());
+			System.out.println("Can't divide by zero");
+			System.out.println(ae.toString());
+			ae.printStackTrace();
+		
+		}
+		finally {
+			System.out.println("Finally is always executed eiter error is there or not");
+		}
+		System.out.println("COMPLETED");
+		
+	}
+
+}
