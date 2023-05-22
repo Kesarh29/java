@@ -1,0 +1,77 @@
+package kesar;
+import java.util.*;
+public class ExceptionEx
+{
+
+	public static void main(String[] args)
+	{
+		Scanner in = new Scanner(System.in);
+		int a,b,div,i;
+		int data[]=new int[5];
+		System.out.println("Enter the number1");
+		a=in.nextInt();
+		System.out.println("Enter the number2");
+		b=in.nextInt();
+		try
+		{
+		div=a/b;
+		System.out.println("Div="+div);
+		System.out.println(data[5]);
+		}
+		catch(ArithmeticException ae)
+		{
+			//System.out.println(ae.getMessage());
+			System.out.println("Can't divide by zero");
+			//System.out.println(ae.toString());
+			//ae.printStackTrace();
+		
+		}
+		catch(ArrayIndexOutOfBoundsException aioe)
+		{
+			System.out.println("Array index out of bound");
+		}
+		catch(Exception ad)
+		{
+			ad.printStackTrace();
+		}
+		//finally {
+			//System.out.println("Finally is always executed eiter error is there or not");
+		//}
+		System.out.println("COMPLETED");
+		
+	}
+
+}
+
+
+
+
+
+package kesar;
+class Age
+{
+	boolean checkAge(int age)
+	{
+		if(age>=18)
+		{
+			return true;
+		}
+		else
+		{
+			
+				return
+			throw new Exception("Age is less than 18");
+		
+		}
+	}
+}
+public class ExceptionEx
+{
+	
+}
+
+
+
+
+
+
